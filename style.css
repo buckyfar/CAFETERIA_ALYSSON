@@ -1,74 +1,100 @@
-/* Definições gerais */
-body {
-    background-color: #4b2e2e; /* Fundo café forte */
-    color: #f5e9e0; /* Cor das letras padrão */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+/* Cores */
 
-/* Estilo do nome da cafeteria */
-.cafeteria-nome {
+.cor-cafe-leite {
+    color: #964B00;
+    }
+    
+    .cor-cafe-forte {
+    background-color: #452B1F;
+    }
+    
+    .cor-marrom-claro {
+    background-color: #F5DEB3;
+    }
+    
+    .cor-branco-sujo {
+    background-color: #F2F2F2;
+    }
+    
+    .cor-leite-com-cafe {
+    color: #C9C4B5;
+    }
+    
+    .cor-cafe-com-leite {
+    background-color: #C9C4B5;
+    }
+    
+    /* Fontes */
+    
+    .fonte-titulo-principal {
     font-size: 45px;
-    color: #d2b48c; /* Cor café com leite */
-    text-align: center;
-    margin: 20px 0 10px;
-}
-
-.linha-nome {
-    width: 80%;
-    height: 2px;
-    background-color: #8b4513; /* Escolha uma cor */
-    margin: 0 auto 20px;
-}
-
-/* Estilo para o header com a imagem e o parágrafo */
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.bem-vindo {
+    }
+    
+    .fonte-paragrafo-intro {
     font-size: 35px;
+    }
+    
+    /* Estilos */
+    
+    .titulo-principal {
+    color: #964B00;
+    font-size: 45px;
+    }
+    
+    .linha-titulo {
+    border-bottom: 2px solid #C9C4B5;
+    }
+    
+    .container-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .paragrafo-intro {
     width: 50%;
-}
-
-.imagem-cafeteria {
-    width: 50%;
-    max-width: 300px;
-}
-
-/* Estilo do cardápio */
-.cardapio {
-    background-color: #d2b48c; /* Marrom clarinho */
+    }
+    
+    .imagem-intro {
+    width: 40%;
+    height: 200px;
+    object-fit: cover;
+    }
+    
+    .secao-cardapio {
+    background-color: #F5DEB3;
     padding: 20px;
-    text-align: center;
-    margin: 20px;
-}
-
-.cardapio h2 {
-    margin-top: 0;
-}
-
-/* Seção Proprietária */
-.proprietaria {
-    background-color: #5e3b3b; /* Tom entre café escuro e leite com café */
-    color: #f5e9e0; /* Letras em tom leite com pouquíssimo café */
+    }
+    
+    .secao-proprietaria {
+    background-color: #C9C4B5;
     padding: 20px;
-    text-align: center;
-}
-
-/* Estilo do rodapé (Contato) */
-.contato {
-    background-color: #f0e5da; /* Branco sujo */
-    color: #4b2e2e;
-    text-align: center;
+    color: #F2F2F2;
+    }
+    
+    .rodape {
+    background-color: #F2F2F2;
     padding: 20px;
-    margin-top: 20px;
-}
-
-footer h2, footer p {
-    margin: 5px 0;
-}
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+    
+    .titulo-contato, .titulo-proprietaria {
+    color: #452B1F;
+    }
+    
+    .paragrafo-contato, .paragrafo-proprietaria {
+    color: #C9C4B5;
+    }
+    
+    /* Responsividade */
+    
+    @media (max-width: 768px) {
+    .container-intro {
+    flex-direction: column;
+    }
+    .paragrafo-intro, .imagem-intro {
+    width: 100%;
+    }
+    }
